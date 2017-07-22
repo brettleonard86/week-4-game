@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kryptonite Collector Game</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Even More CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jQuery link -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<!-- Javascript-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Kryptonite Collector</h1>
+            <h2>Rules</h2>
+            <ol type="1">
+                <li>You will be given a random number at the start of the game.</li>
+                <br>
+                <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score. </li>
+                <br>
+                <li>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number</li>
+                <br>
+                <li>The value of each crystal is hidden from you until you click on it.</li>
+                <br>
+                <li>Each time when the game starts the game will change the values of each crystal</li>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-primary btn-lg" id="blueButton"><img src="assets/images/bluekrypt.jpg"></button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-primary btn-lg" id="grnButton"><img src="assets/images/grnkrypt.jpg"></button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-primary btn-lg" id="redButton"><img src="assets/images/redkrypt.jpg"></button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-outline-primary btn-lg" id="yllwButton"><img src="assets/images/yllwkrypt.jpg"></button>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Kryptonite Goal</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="randomNumber">
+                            <!-- Random Number Generator -->
+                            <h2><p id="resultRandomNumber"></p></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Total Kryptonite Count</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="kryptoniteTotal">
+                            <!-- Total points earned through clicking buttons -->
+                            <h2><p id="resultKryptoniteTotal"></p></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Scoreboard</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="scoreboard">
+                            <!-- Scoreboard -->
+                            <p class="lead" id="scoreWins">Wins: </p>
+                            
+                            <p class="lead" id="scoreLosses">Losses: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="click" src="assets/images/Game-Shot.mp3" preload="auto"></audio>
+    <audio id="buzzer" src="assets/images/buzzer.mp3" preload="auto"></audio>
+    <audio id="winner" src="assets/images/taDa.mp3" preload="auto"></audio>
+</body>
+
+</html>

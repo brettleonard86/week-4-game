@@ -1,0 +1,29 @@
+body{
+	background: url(../images/kryptoniteBG1.jpg) center center fixed;
+	width: 100%;
+	font-family: 'Audiowide', cursive;
+}
+
+#resultRandomNumber, #resultKryptoniteTotal{
+	text-align: center;
+	font-size: 36px;
+	vertical-align: middle;
+}
+
+.jumbotron, .panel-body, .btn{
+	background-color: black;
+	color: #05b447;
+	border-color: #ddd;
+}
+
+.panel-default>.panel-heading {
+	background-color: gray;
+}
+
+.btn{
+	height: 125px;
+}
+
+.panel-body{
+	height: 120px;
+}
